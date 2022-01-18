@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="Redmi-MT6768"
+           fetch="https://github.com/Redmi-MT6768"
+           revision="eleven"/>
+
+  <remote  name="wz414-labs"
+           fetch="https://github.com/wz414-labs"
+           revision="e/os/v1-r" />
+
+ <!-- Device Trees -->
+  <project path="device/xiaomi/lava" name="android_device_xiaomi_lava" remote="wz414-labs" />
+  <project path="device/xiaomi/mt6768-common" name="android_device_xiaomi_mt6768-common" remote="Redmi-MT6768" revision="lineage-18.1"/>
+
+ <!-- Kernel -->
+  <project path="kernel/xiaomi/mt6768" name="android_kernel_xiaomi_mt6768" remote="Redmi-MT6768"/>
+
+ <!-- Vendor Trees -->
+  <project path="vendor/xiaomi/lava" name="android_vendor_xiaomi_lava" remote="Redmi-MT6768"/>
+
+ <!-- Extras -->
+  <project path="device/mediatek/sepolicy_vndr" name="PixelExperience/device_mediatek_sepolicy_vndr" remote="github" revision="eleven"/>
+  <project path="vendor/e-replacements" name="aitex64_vendor_e-replacements" remote="wz414-labs" revision="master" />
+
+</manifest>
